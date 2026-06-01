@@ -1,0 +1,67 @@
+{
+  "name": "pakpay-js",
+  "version": "1.1.1",
+  "description": "JazzCash & Easypaisa payment SDK for Node.js — hosted checkout, verify callback, status inquiry (Pakistan)",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./express": {
+      "types": "./dist/express.d.ts",
+      "import": "./dist/express.js",
+      "require": "./dist/express.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:e2e": "vitest run tests/e2e",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "check:publish": "npm run lint && npm test && npm run build && npm pack --dry-run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "jazzcash",
+    "jazzcash-payment",
+    "easypaisa",
+    "pakistan",
+    "payment",
+    "payment-gateway",
+    "pkr",
+    "fintech",
+    "nodejs",
+    "sdk"
+  ],
+  "author": "Evolvo <dev@evolvo.pk>",
+  "license": "MIT",
+  "homepage": "https://github.com/evolvo/pakpay-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evolvo/pakpay-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evolvo/pakpay-js/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

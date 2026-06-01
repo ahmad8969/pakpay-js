@@ -1,0 +1,10 @@
+src/
+tests/
+examples/
+docs/
+*.config.ts
+tsconfig*.json
+.git/
+.github/
+vitest.config.ts
+agent-tools/

@@ -1,0 +1,9 @@
+{
+  "name": "pakpay-js-express-example",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2",
+    "pakpay-js": "file:../.."
+  }
+}

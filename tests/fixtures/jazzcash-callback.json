@@ -1,0 +1,11 @@
+{
+  "pp_Version": "1.1",
+  "pp_TxnType": "MWALLET",
+  "pp_ResponseCode": "000",
+  "pp_ResponseMessage": "Thank you for Using JazzCash, your transaction was successful.",
+  "pp_MerchantID": "MC00000",
+  "pp_TxnRefNo": "ORDER-123",
+  "pp_Amount": "100000",
+  "pp_TxnCurrency": "PKR",
+  "pp_BillReference": "ORDER-123"
+}
