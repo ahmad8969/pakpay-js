@@ -13,12 +13,20 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "build": "node init && tsup src/index.ts --format esm,cjs --dts --clean",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["pakpay", "express", "easypaisa", "jazzcash", "pakistan"],
+  "keywords": [
+    "pakpay",
+    "express",
+    "easypaisa",
+    "jazzcash",
+    "pakistan"
+  ],
   "author": "Evolvo <dev@evolvo.pk>",
   "license": "MIT",
   "repository": {
