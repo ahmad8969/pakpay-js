@@ -1,7 +1,7 @@
 {
   "name": "pakpay-js",
   "version": "1.1.1",
-  "description": "JazzCash & Easypaisa payment SDK for Node.js — hosted checkout, verify callback, status inquiry (Pakistan)",
+  "description": "JazzCash & Easypaisa payment SDK for Node.js \u2014 hosted checkout, verify callback, status inquiry (Pakistan)",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -31,7 +31,8 @@
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
     "check:publish": "npm run lint && npm test && npm run build && npm pack --dry-run",
-    "prepublishOnly": "npm run build && npm test"
+    "prepublishOnly": "npm run build && npm test",
+    "publish:npm": "npm run check:publish && npm publish --access public"
   },
   "keywords": [
     "jazzcash",
@@ -60,6 +61,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
